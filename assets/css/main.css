@@ -44,15 +44,7 @@ background-size: cover;
 	width: 100%;
 
 }
-button{
-	width: 100px;
-	padding: 10px;
-	background: #1DA1F2;
-	color: white;
-	font-weight: bolder;
-	display: block;
 
-}
 .principal{
 	width: 100%;
 	height: 30em;
@@ -68,4 +60,20 @@ button{
 	margin-left: 100px;
 	margin-right: 100px;
 
+}
+.btnE{
+	width: 100px;
+	padding: 10px;
+	background: #1DA1F2;
+	color: white;
+	font-weight: bolder;
+	display: block;
+}
+.btnD{
+	width: 100px;
+	padding: 10px;
+	background:#777777;
+	color: white;
+	font-weight: bolder;
+	display: block;
 }

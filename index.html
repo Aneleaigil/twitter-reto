@@ -27,11 +27,12 @@
 		<!-- seccion texttarea, boton y contenedor de mensajes -->
 		
 			<div class="container">
-				<textarea class="txt" id="comment" cols="60" rows="8" placeholder="¿Qué esta pasando?"></textarea>
+				<textarea class="txt" id="comment" cols="60" rows="8" placeholder="¿Qué esta pasando?" onKeyDown="validar()"  onKeyUp="validar()"></textarea>
 		
-				<button type="button" id="btn" onclick="add()">TWEET</button>
-
+				<button type="button" id="btn" class="btnD" onclick="add()">TWEET</button>
+				<input type="text" class="contador" id="nros" name="letras" value="140">
 			</div>
+
 		</section>
 				<section>
 					<!-- contenedor comentarios -->
@@ -40,6 +41,7 @@
 				<!-- script files -->
 			
 			<script type="text/javascript" src="assets/js/app.js"></script>
+			<script src="http://use.fontawesome.com/7873633050.js"></script>
 	
 </body>
 </html>
