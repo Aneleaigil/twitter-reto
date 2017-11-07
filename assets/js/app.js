@@ -1,6 +1,6 @@
 var enviar= document.getElementById('btn');
 var count=document.getElementById('nros');
-  validar(false);
+  validar(false); // para tener el boton deshabilitado
 function add(){
     var textoUser=document.getElementById('comment').value; 
     document.getElementById('comment').value="";
@@ -11,15 +11,15 @@ function add(){
     paragraph.appendChild(nodoText);
     newTexto.appendChild(paragraph);
     cont.appendChild(newTexto);
-    validar(false);
+    validar(false); // para llamar la funcion 
 
  }
 
-function validar(texto){
+function validar(texto){ // funcion que valida el ingreso de texto
  
  if(texto==false){
  enviar.disabled = true;
- enviar.classList.add('btnD');
+ enviar.classList.add('btnD'); // cambia de color el boton
  enviar.classList.remove('btnE');
  } else{
    enviar.disabled = false;
@@ -28,7 +28,7 @@ function validar(texto){
 }
 }
 function contar() {
-    var valor=document.getElementById('comment').value;
+    var valor=document.getElementById('comment').value; // funcion contador con fallas (no me funciona aun)
     var max = "140"; 
     var letras=document.getElementById('nros').value;
     var long=letras.length;
