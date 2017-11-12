@@ -30,6 +30,7 @@ function validar(texto){ // funcion que valida el ingreso de texto
  enviar.disabled = false; //boton deshabilitado
  enviar.classList.add('btnE'); // cambia color 
  enviar.classList.remove('btnD') // remueve color anterior
+
 }
 }
 
@@ -40,11 +41,12 @@ function cuenta(){ // funcion para contar caracteres
   
  if (document.forms[0].comment.value.length!=0){  // se introduce un boleano para poder llamar a la funcion validar que esta solo en js                        
  validar(true)
-  
+  }
  if (document.forms[0].comment.value.length>140){  
  validar(false)
+
 }else{
-    
+S
 if (document.forms[0].comment.value.length!=0){  // se introduce un boleano para poder llamar a la funcion validar que esta solo en js                        
  validar(true)
 
@@ -64,11 +66,23 @@ if(document.forms[0].comment.value.length>130 && document.forms[0].comment.value
 count.classList.add('contadorB');                               
 count.classList.remove('contador');
 count.classList.remove('contadorA');
- 
- }                                  
-}
+}                              
 }
 }
 }
 
+ //para agrandar el texto a medida que se le introduce el texto
+
+var textarea = document.querySelector('textarea');// para seleccionar todo el espacio del textarea
+textarea.addEventListener('keydown', autosize);
+             
+function autosize(){ // funcion para que se automodifique con el texto introducido
+  var size = this;   // se coloca this como enlace de objeto que sera el texto introducido por el usuario
+
+  setTimeout(function(){//ejecutara la funcion anterior una vez para modificar en css el ancho y alto del textarea una vez se halla escrito algo en el textarea 
+    size.style.cssText = 'height:auto; padding:0';
+    size.style.cssText = 'height:' + size.scrollHeight + 'px';
+
+  },0);
+}
 

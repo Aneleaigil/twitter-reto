@@ -42,7 +42,9 @@ background-size: cover;
 	border-style: none;
 	border-bottom: 1px solid blue;
 	width: 100%;
-
+    overflow:hidden;
+    margin:50px auto;
+    display:block;
 }
 
 .principal{
@@ -95,4 +97,10 @@ background-size: cover;
 	background-color: transparent;
 	font-size: 15px;
 {
+
+
+  overflow:hidden;
+  margin:50px auto;
+  display:block;
+}
 	
