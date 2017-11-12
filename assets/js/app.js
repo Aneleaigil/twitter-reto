@@ -1,6 +1,7 @@
 var enviar= document.getElementById('btn');
-var count=document.getElementById('nros');
+/*var count=document.getElementById('nros');*/
   validar(false); // para tener el boton deshabilitado
+
 function add(){
     var textoUser=document.getElementById('comment').value; 
     document.getElementById('comment').value="";
@@ -13,6 +14,7 @@ function add(){
     cont.appendChild(newTexto);
     validar(false); // para llamar la funcion 
 
+
  }
 
 function validar(texto){ // funcion que valida el ingreso de texto
@@ -22,16 +24,21 @@ function validar(texto){ // funcion que valida el ingreso de texto
  enviar.classList.add('btnD'); // cambia de color el boton
  enviar.classList.remove('btnE');
  } else{
-   enviar.disabled = false;
+
+ enviar.disabled = false;
  enviar.classList.add('btnE');
  enviar.classList.remove('btnD')
 }
 }
-function contar() {
-    var valor=document.getElementById('comment').value; // funcion contador con fallas (no me funciona aun)
-    var max = "140"; 
-    var letras=document.getElementById('nros').value;
-    var long=letras.length;
-    valor.innerHTML=max-long
-}
-     
+
+var valorUser=document.getElementById('comment').value.length;
+var longMax= 140; 
+var resta=longMax-valorUser;
+document.getElementById('nros').value=resta;
+
+
+
+
+
+
+

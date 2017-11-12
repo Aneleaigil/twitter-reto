@@ -27,10 +27,14 @@
 		<!-- seccion texttarea, boton y contenedor de mensajes -->
 		
 			<div class="container">
-				<textarea class="txt" id="comment" cols="60" rows="8" placeholder="¿Qué esta pasando?" onKeyDown="validar()"  onKeyUp="validar()"></textarea>
+		<textarea class="txt" id="comment" cols="60" rows="8" placeholder="Añadir Tablero Nuevo" onkeydown="validar()" onkeyup="validar()"  maxlength="140"></textarea>
+
+
 		
 				<button type="button" id="btn" class="btnD" onclick="add()">TWEET</button>
-				<input type="text" class="contador" id="nros" name="letras" value="140">
+
+				<input type="text" class="contador" id="nros" name="letras">
+				
 			</div>
 
 		</section>
