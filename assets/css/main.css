@@ -79,10 +79,20 @@ background-size: cover;
 }
 .contador{
 	color:blue;
+	border: 0px;
+	background-color: transparent;
+	font-size: 15px;
 }
 .contadorA{
 	color: purple;
+	border: 0px;
+	background-color: transparent;
+	font-size: 15px;
 }
 .contadorB{
 	color:red;
-}
+    border: 0px;
+	background-color: transparent;
+	font-size: 15px;
+{
+	
