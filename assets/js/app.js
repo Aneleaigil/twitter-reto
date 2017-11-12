@@ -1,5 +1,5 @@
 var enviar= document.getElementById('btn');
-/*var count=document.getElementById('nros');*/
+var count=document.getElementById('nros');
   validar(false); // para tener el boton deshabilitado
 
 
@@ -39,9 +39,27 @@ function cuenta(){ // funcion para contar caracteres
    // y se le resta el largo del texto introducido con comment
  if (document.forms[0].comment.value.length!=0){  // se introduce un boleano para poder llamar a la funcion validar que esta solo en js                        
  validar(true)
- }                                                                   
+
+ if (document.forms[0].comment.value.length>120 && document.forms[0].comment.value.length <= 130){ //Si pasa los 120 caracteres, mostrar el contador con OTRO color.
+
+count.classList.add('contadorA');
+count.classList.remove('contador');
+count.classList.remove('contadorB');
+}else{
+count.classList.add('contador');
+count.classList.remove('contadorA');
+count.classList.remove('contadorB');
+}
+if(document.forms[0].comment.value.length>130 && document.forms[0].comment.value.length <= 140){ //Si pasa los 130 caracteres, mostrar el contador con OTRO color.
+count.classList.add('contadorB');                               
+count.classList.remove('contador');
+count.classList.remove('contadorA');
+
+ }                                  
+}
 }
 
 
+//Si pasa los 140 caracteres, mostrar el contador en negativo.
 
 

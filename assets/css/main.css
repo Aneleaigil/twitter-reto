@@ -77,3 +77,12 @@ background-size: cover;
 	font-weight: bolder;
 	display: block;
 }
+.contador{
+	color:blue;
+}
+.contadorA{
+	color: purple;
+}
+.contadorB{
+	color:red;
+}
