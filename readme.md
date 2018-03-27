@@ -1,4 +1,4 @@
-#Twitter Reto
+# Twitter Reto
 Elaborado para Laboratoria 2017
 
 programa que replica el envio de mensajes en twitter, para la elaboración de esta aplicacion se utilizo HTML5, CSS, y Javascript.
